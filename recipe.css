@@ -1,1 +1,40 @@
+body {
+font-family: arial;
+background-color: #f0f0f0;
+}
+H1 {
+COLOR: BLUE;
+text-align: CENTER;
+}
+h2 { color: green; }
+p { font-size: 16px; }
+img { width: 300PX; }
+.layout { display: flex; }
+.instructions-container {
+DISPLAY: FLEX;
+flex-wrap: wrap;
+}
+.instruction-step {
+width: 300px;
+border: 1px solid black
+margin: 20px;
+PADDING: 5px;
+}
+
+/* New styles for inputs */
+
+button {
+  BACKGROUND-COLOR: green;
+  color: white;
+  padding: 5px;
+}
+
+input {
+  border: 2px solid blue;
+}
+
+select {
+  padding: 3px;
+  font-family: arial;
+}
 
