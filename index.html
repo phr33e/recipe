@@ -5,15 +5,10 @@
 <TITLE>Sandwich Recipe</title>
 <link rel="stylesheet" href="style.css">
 </HEAD>
-
 <body>
-
 <section class="layout">
 <div>
 <h1>Simple sandwich recipe</h1>
-
-
-</script>
 <h2>Ingredients</h2>
 <ul>
 <li>Bread</li>
@@ -26,9 +21,7 @@
 <img src="https://www.simplyrecipes.com/thmb/5KEzbHplXxqFntM-jqrI0QdExR4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Egg-Salad-Sandwich-LEAD-22-8ecbb89abda34a84b649ff4c44bab525.JPG" alt="Simple Sandwich">
 </div>
 </section>
-
 <div class="instructions-container">
-
 <div class="instruction-step">
 <h2>Growing Wheat (for Bread)</h2>
 <img SRC="https://www.topcropmanager.com/wp-content/uploads/2019/01/8ffa3285df6a0ed30059b6c3d9246a3e.jpg" alt="growing wheat field">
@@ -45,7 +38,6 @@
 <li>Mill the wheat into flour (stone or modern mill).</li>
 </ol>
 </div>
-
 <div class="instruction-step">
 <h2>Making Bread</h2>
 <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2Jha2luZy1icmVhZDEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0=" alt="making bread dough">
@@ -62,7 +54,6 @@
 <li>Cool completely before slicing.</li>
 </ol>
 </div>
-
 <div class="instruction-step">
 <h2>Raising and Processing Chicken</h2>
 <img src="https://i.ytimg.com/vi/YXSazcr5Psc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC0m9WDdJFqpVCO6X5ikWIi4vnhgg" alt="raising chickens on farm">
@@ -77,7 +68,6 @@
 <li>Slice meat for sandwich.</li>
 </ol>
 </div>
-
 <div class="instruction-step">
 <h2>Milking Cow and Making Cheese</h2>
 <img src="https://i.ytimg.com/vi/Qi4gc6X6FNw/maxresdefault.jpg" alt="milking cow and making cheese">
@@ -94,7 +84,6 @@
 <li>Slice cheese for sandwich.</li>
 </ol>
 </div>
-
 <div class="instruction-step">
 <h2>Growing & Pickling Vegetables</h2>
 <img src="https://d4c5gb8slvq7w.cloudfront.net/eyJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjUwMCwiaGVpZ2h0IjozMzN9fSwiYnVja2V0IjoiZmluZWdhcmRlbmluZy5zMy50YXVudG9uY2xvdWQuY29tIiwia2V5IjoiYXBwXC91cGxvYWRzXC92Zy1taWdyYXRpb25cLzIwMDlcLzAzXC8yNzIzMzQ0M1wva2cyMS1waWNrbGluZy1jdWN1bWJlcnMtMDIuanBnIn0=" alt="growing pickling vegetables">
@@ -109,8 +98,6 @@
 <li>Refrigerate for at least 1 hour.</li>
 </ol>
 </div>
-
-
 <div class="instruction-step">
 <h2>Making Salt</h2>
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Salt_Farmers_-_Pak_Thale-edit1.jpg" alt="making salt from seawater">
@@ -120,50 +107,31 @@
 <li>Evaporate water or grind the rock.</li>
 </ol>
 </div>
-
-
 </div>
-
-
 <p>Write a review.</p>
 <input type="text" id="myInput" oninput="updateInputText()">
 <p id="G"></p>
-
-<button onclick="submitReview()">Cick to confirm</button>
+<button onclick="submitReview()">Click to confirm</button>
 <p id="demo"></p>
-
-
 <p>Change the ingredient:</p>
 <select id="mySelect" onchange="changeIngredient()">
   <option value="Lettuce">Lettuce</option>
   <option value="Spinach">Spinach</option>
   <option value="Arugula">Arugula</option>
 </select>
-
 <p>Ingredient choice: <span id="ingredient-choice">Lettuce</span></p>
-
-
 <script>
 function updateInputText() {
   let x = document.getElementById("myInput").value;
   document.getElementById("G").innerHTML = "You wrote: " + x;
 }
-
-
 function submitReview() {
   document.getElementById("demo").innerHTML = "Your review has been submitted";
 }
-
-
 function changeIngredient() {
     var choice = document.getElementById("mySelect").value;
-
     document.getElementById("ingredient-choice").innerHTML = choice;
 }
 </script>
-
 </body>
-
-
 </html>
-
